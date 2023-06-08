@@ -44,7 +44,7 @@ const App = () => {
       const updatedTotalPrice = totalPrice + parseFloat(price);
       setTotalPrice(updatedTotalPrice);
 
-      // Limpiar los campos del formulario
+
       setName('');
       setDescription('');
       setPrice('');
@@ -83,37 +83,37 @@ const App = () => {
   return (
     <div className="container">
       <div className="add-product">
-        <h2>Add Product</h2>
+        <h2>Añadir Producto</h2>
         <form>
-          <label htmlFor="nameInput">Name:</label>
+          <label htmlFor="nameInput">Nombre:</label>
           <input id="nameInput" type="text" value={name} onChange={handleNameChange} />
           <br />
-          <label htmlFor="descriptionInput">Description:</label>
+          <label htmlFor="descriptionInput">Descripción:</label>
           <input id="descriptionInput" type="text" value={description} onChange={handleDescriptionChange} />
           <br />
-          <label htmlFor="priceInput">Price:</label>
+          <label htmlFor="priceInput">Precio:</label>
           <input id="priceInput" type="number" value={price} onChange={handlePriceChange} />
           <br />
           <button type="button" onClick={handleAddProduct} disabled={!name || !price}>
-            Add
+            Añadir
           </button>
         </form>
       </div>
       <div className="cart">
-        <h2>Shopping Cart</h2>
+        <h2>Carrito de Compras</h2>
         <p className="total-price">
           <FaShoppingCart size={20} style={{ marginRight: '5px' }} />
-          Total Price: ${totalPrice.toFixed(2)}
+          Precio Total: ${totalPrice.toFixed(2)}
         </p>
         {products.map((product, index) => (
           <div className="product" key={index}>
             <h3>
               {product.name} ({product.quantity})
             </h3>
-            {product.description && <p>Description: {product.description}</p>}
-            <p>Price: ${product.price.toFixed(2)}</p>
+            {product.description && <p>Descripción: {product.description}</p>}
+            <p>Precio: ${product.price.toFixed(2)}</p>
             <button type="button" onClick={() => handleRemoveProduct(index)}>
-              Remove
+              Eliminar
             </button>
             <button type="button" onClick={() => handleIncrementQuantity(index)}>
               +
