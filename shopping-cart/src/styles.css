@@ -1,59 +1,76 @@
 body {
-    display: flex;
-    background-color: pink;
-    font-family: Arial, sans-serif;
-    padding: 20px;
-  }
-  
-  .add-product {
-    flex: 1;
-    margin-right: 20px;
-  }
-  
-  .cart {
-    flex: 1;
-  }
-  
-  h1, h2, h3 {
-    color: white;
-    background-color: #ff69b4;
-    padding: 10px;
-  }
-  
-  form {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  input {
-    margin-bottom: 10px;
-    padding: 5px;
-    width: 200px;
-  }
-  
-  button {
-    padding: 5px 10px;
-    background-color: #ff69b4;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-  }
-  
-  .product {
-    background-color: white;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .total-price {
-    text-align: right;
-  }  
+  margin: 0;
+  padding: 0;
+  background-color: #ff69b4;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 900px;
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.add-product {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.product {
+  background-color: #f8f8f8;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.total-price {
+  text-align: right;
+  margin-top: auto;
+}

@@ -12,4 +12,9 @@ const ShoppingCart = ({ cartItems }) => {
   );
 };
 
+<p className="total-price">
+  <FaShoppingCart size={20} style={{ marginRight: '5px' }} />
+  Total Price: ${totalPrice.toFixed(2)}
+</p>
+
 export default ShoppingCart;
