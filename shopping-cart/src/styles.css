@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    background-color: pink;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .add-product {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .cart {
+    flex: 1;
+  }
+  
+  h1, h2, h3 {
+    color: white;
+    background-color: #ff69b4;
+    padding: 10px;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 200px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .product {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .total-price {
+    text-align: right;
+  }  
